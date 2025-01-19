@@ -51,6 +51,9 @@ Zaprezentowano:
 rs.add("mongo-2.mongo-headless.roommate.svc.cluster.local:27017")
  - poprawnośc działania
 
+[UPDATE]
+Przy późniejszym testowaniu musiałem dodać ten sekret którego nie uwzględniłem w secrets.yaml
+kubectl create secret generic mongo-keyfile -n roommate --from-file=mongo-keyfile
 
 
 
